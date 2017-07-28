@@ -10,8 +10,8 @@ class Navbar extends React.Component {
                 <span><a href="#">Blog</a></span>
                 <span>
                     <DropdownButton>
-                        <MenuItem eventKey="1">Code </MenuItem>
-                        <MenuItem eventKey="2">Expo </MenuItem>
+                        <MenuItem eventKey="1"><a href="#">Code</a></MenuItem>
+                        <MenuItem eventKey="2"><a>Expo</a></MenuItem>
                     </DropdownButton>
                 </span>
             </div>
