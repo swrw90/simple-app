@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 // import components
 import Navbar from './navbar.js';
+import Header from './header';
 import "./index.css";
 
 class App extends React.Component {
@@ -10,9 +11,8 @@ class App extends React.Component {
         return (
             <div>
             <Navbar />
-                <h1>Hello World</h1>
-                <h2>It's me</h2>
-                <p>I've thought about us for a long, long time.</p>
+            <Header />
+                
             </div>
         );
     }
