@@ -1,6 +1,6 @@
 .navbar {
     width: 100%;
-    background-color: darkgrey;
+    background-color: #222;
 }
 
 span {
@@ -10,4 +10,27 @@ span {
 
 .brand {
     color: #fff;
+}
+
+.title {
+    font-size :100px;
+    color: #F44336;
+}
+
+.footer {
+    background-color: #222;
+    padding: 20px 40px;
+    padding-bottom: 40px;
+
+}
+
+.float-left{
+    float: left;
+    text-align: left;
+    vertical-align: center;
+}
+
+.float-right{
+    float: right;
+    text-align: right;
 }

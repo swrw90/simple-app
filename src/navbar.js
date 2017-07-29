@@ -3,18 +3,26 @@ import { DropdownButton, MenuItem } from 'react-bootstrap';
 
 class Navbar extends React.Component {
     render() {
+        console.log(this);
         return (
-            <div className="navbar">
-                <span><a href="#">Home</a></span>
-                <span><a href="#">Contact</a></span>
-                <span><a href="#">Blog</a></span>
-                <span>
-                    <DropdownButton>
-                        <MenuItem eventKey="1"><a href="#">Code</a></MenuItem>
-                        <MenuItem eventKey="2"><a>Expo</a></MenuItem>
-                    </DropdownButton>
-                </span>
-            </div>
+            <nav className="navbar navbar-inverse">
+                <div className="container-fluid">
+                    <div className="navbar-header">
+                        <a className="navbar-brand">{this.props.brand}</a>
+                    </div>
+                    <ul className="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li>
+                            <DropdownButton>
+                                <MenuItem eventKey="1"><a href="#">Code</a></MenuItem>
+                                <MenuItem eventKey="2"><a>Expo</a></MenuItem>
+                            </DropdownButton>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         )
     }
 }

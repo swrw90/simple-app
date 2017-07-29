@@ -11,7 +11,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-            <Navbar />
+            <Navbar brand="CatBabies"/>
             <Header />
             <Footer />    
             </div>
