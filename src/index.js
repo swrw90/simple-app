@@ -11,9 +11,24 @@ class App extends React.Component {
     render() {
         return (
             <div>
-            <Navbar brand="CatBabies"/>
-            <Header />
-            <Footer />    
+                <Navbar brand="CatBabies" links={
+                    [
+                        {
+                            text: "Blog",
+                            link: "http://google.com"
+                        },
+                        {
+                            text: "Title",
+                            link: "http://yahoo.com"
+                        },
+                        {
+                            text: "More Info",
+                            link: "http://atom.io"
+                        }
+                    ]
+                } />
+                <Header />
+                <Footer />
             </div>
         );
     }
